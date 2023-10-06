@@ -72,13 +72,12 @@ sel_b <= '1' when (current_state = R_OP or current_state = STORE) else '0';
 sel_mem <= '1' --mis ici pour l instant pas encore d info
 
 
-
-pc_en <= '1' when current_state = FETCH2 else '0';
+pc_en <= '1' when (current_state = FETCH2 or (branch_op = '1' and s_op = x"06")) else '0';-- todo a voir avec assistant pour alu==1
+pc_add_imm <= '1' when current_state = BRANCH else '0';
 
 ir_en <= '1' when current_state = FETCH2 else '0';
 rf_wren <= '1' when (current_state = I_OP or current_state = R_OP or current_state = LOAD2) else '0';
 imm_signed <= '1' when current_state = I_OP else '0';
-
 branch_op <= '1' when current_state = BRANCH else '0';
 
 
@@ -90,7 +89,16 @@ op_alu <= "100001" when (s_op = X"3A" and s_opx = X"0E") else
         "000000" when (s_op = X"04") else
         "000000" when (s_op = X"17") else
         "000000" when (s_op = x"15") else
-        "111111"
+
+        "011011" when (s_op = x"06") else --todo : verifier si c est bien ca
+        
+        "011001" when (s_op = x"0E") else
+        "011010" when (s_op = x"16") else
+        "011011" when (s_op = x"1E") else
+        "011100" when (s_op = x"26") else
+        "011101" when (s_op = x"2E") else
+        "011110" when (s_op = x"36") else
+        "111111" when OTHERS;
 
 
 end synth;

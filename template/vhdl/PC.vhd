@@ -39,6 +39,8 @@ begin
 
     end process;
     
-    cur_addr <= std_logic_vector(unsigned(next_addr) + 4);
+    cur_addr <= std_logic_vector(unsigned(next_addr) + 4) when add_imm = '0'
+        else std_logic_vector(unsigned(next_addr) + unsigned(imm) + 4);
+    
 
 end synth;
