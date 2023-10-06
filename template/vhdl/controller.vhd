@@ -38,7 +38,7 @@ end controller;
 
 architecture synth of controller is
 
-    type state_type is (FETCH1 , FETCH2 , DECODE, BREAK, STORE, R_OP, I_OP, LOAD1, LOAD2);
+    type state_type is (FETCH1 , FETCH2 , DECODE, BREAK, STORE, R_OP, I_OP, LOAD1, LOAD2, BRANCH);
     signal current_state, next_state : state_type;
     signal s_op, s_opx : unsigned(5 downto 0);
 
@@ -65,10 +65,32 @@ next_state <= FETCH2 when current_state = FETCH1 else
             STORE when current_state = DECODE and s_op = X"15"  else
             BREAK when OTHERS;
 
-process (clk, reset_n)
-begin
-    
-end process;
+            
+sel_addr <= '1' when (current_state = FETCH1 or current_state = LOAD1 or current_state = STORE) else '0';
+sel_pc <= '1' when current_state = FETCH2 else '0';
+sel_b <= '1' when (current_state = R_OP or current_state = STORE) else '0';
+sel_mem <= '1' --mis ici pour l instant pas encore d info
+
+
+
+pc_en <= '1' when current_state = FETCH2 else '0';
+
+ir_en <= '1' when current_state = FETCH2 else '0';
+rf_wren <= '1' when (current_state = I_OP or current_state = R_OP or current_state = LOAD2) else '0';
+imm_signed <= '1' when current_state = I_OP else '0';
+
+branch_op <= '1' when current_state = BRANCH else '0';
+
+
+read <= '1' when (current_state = FETCH1 or current_state = LOAD1) else '0';
+write <= '1' when current_state = STORE else '0';
+            
+op_alu <= "100001" when (s_op = X"3A" and s_opx = X"0E") else
+        "110011" when (s_op = X"3A" and s_opx = X"1B") else
+        "000000" when (s_op = X"04") else
+        "000000" when (s_op = X"17") else
+        "000000" when (s_op = x"15") else
+        "111111"
 
 
 end synth;
