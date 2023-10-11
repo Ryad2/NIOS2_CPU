@@ -53,8 +53,8 @@ begin
     s_op <= unsigned(op);
     s_opx <= unsigned(opx);
 
-    s_itype <= '1' when else '0';
-    s_rtype <= '1' when else '0';
+    s_itype <= '1' when (current_state = JMPI or current_state = CALL or current_state = BRANCH or current_state = STORE  or current_state = LOAD1 or current_state = LOAD2 or current_state = I_OP) else '0';
+    s_rtype <= '1' when (current_state = JMP or current_state = CALLR or current_state = BREAK  or current_state = R_OP) else '0';
 
 process(clk, reset_n)
 begin
@@ -102,19 +102,57 @@ branch_op <= '1' when current_state = BRANCH else '0';
 read <= '1' when (current_state = FETCH1 or current_state = LOAD1) else '0';
 write <= '1' when current_state = STORE else '0';
             
-op_alu <= "100001" when (s_op = X"3A" and s_opx = X"0E") else
-        "110011" when (s_op = X"3A" and s_opx = X"1B") else
-        "000000" when (s_op = X"04") else
-        "000000" when (s_op = X"17") else
-        "000000" when (s_op = x"15") else
-        "011100" when (s_op = x"06") else
-        "011001" when (s_op = x"0E") else
-        "011010" when (s_op = x"16") else
-        "011011" when (s_op = x"1E") else
-        "011100" when (s_op = x"26") else
-        "011101" when (s_op = x"2E") else
-        "011110" when (s_op = x"36") else
-        "111111" when OTHERS;
+--op_alu <= 
+--        "100001" when (s_op = X"3A" and s_opx = X"0E") else
+--        "110011" when (s_op = X"3A" and s_opx = X"1B") else
+--        "000000" when (s_op = X"04") else
+--        "000000" when (s_op = X"17") else
+--        "000000" when (s_op = x"15") else
+--        "011100" when (s_op = x"06") else
+--        "011001" when (s_op = x"0E") else
+--        "011010" when (s_op = x"16") else
+--        "011011" when (s_op = x"1E") else
+--        "011100" when (s_op = x"26") else
+--        "011101" when (s_op = x"2E") else
+--        "011110" when (s_op = x"36") else
+--        "111111" when OTHERS;
 
+op_alu <=
+        -- add
+        "000---" when op = "000100" or (op = "111010" and opx = "110001") else
+        -- sub
+        "001---" when (op = "111010" and opx = "111001") else
+        -- <= s
+        "011001" when op = "001000" or (op = "111010" and opx = "001000") else
+        -- > s
+        "011010" when op = "010000" or (op = "111010" and opx = "010000") else
+        -- !=
+        "011011" when op = "011000" or (op = "111010" and opx = "011000") else
+        -- ==
+        "011100" when op = "100000" or (op = "111010" and opx = "100000") else
+        -- <= u
+        "011101" when op = "101000" or (op = "111010" and opx = "101000") else
+        -- > u
+        "011110" when op = "110000" or (op = "111010" and opx = "110000") else
+        -- nor
+        "10--00" when (op = "111010" and opx = "000110") else
+        -- and
+        "10--01" when op = "001100" or (op = "111010" and opx = "001110") else
+        -- or
+        "10--10" when op = "010100" or (op = "111010" and opx = "010110") else
+        -- xnor
+        "10--11" when op = "011100" or (op = "111010" and opx = "011110") else
+        -- rol
+        "11-000" when (op = "111010" and opx = "000011") else
+        -- ror
+        "11-001" when (op = "111010" and opx = "001011") else
+        -- sll
+        "11-010" when (op = "111010" and opx = "010011") or (op = "111010" and opx = "010010") else
+        -- srl
+        "11-011" when (op = "111010" and opx = "011011") or (op = "111010" and opx = "011010") else
+        -- sra
+        "11-111" when (op = "111010" and opx = "111011") or (op = "111010" and opx = "111010") else
+        -- dontcare
+        "------" when OTHERS;
 
 end synth;
