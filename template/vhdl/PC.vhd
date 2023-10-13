@@ -39,8 +39,8 @@ begin
 
     end process;
     
-    cur_addr <= std_logic_vector(unsigned(next_addr) + 4) when en = '1'
-        else std_logic_vector(unsigned(next_addr) + unsigned(imm)) when add_imm = '1'
+    next_addr <= std_logic_vector(unsigned(cur_addr) + 4) when en = '1'
+        else std_logic_vector(unsigned(cur_addr) + unsigned(imm)) when add_imm = '1'
         else imm(13 downto 0) & "00" when sel_imm = '1'
         else a(15 downto 2) & "00" when sel_a = '1';
         else curr_addr;

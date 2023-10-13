@@ -49,12 +49,14 @@ begin
 
     s_pcEnable <= '1' when (current_state = FETCH2 or current_state = CALL or current_state = CALLR or current_state = JMP or current_state = JMPI) else '0';
     s_wrEnable <= '1' when (current_state = I_OP or current_state = R_OP or current_state = LOAD2 or current_state = CALL or current_state = CALLR) else '0';
-    s_branch <= '1' when (s_op = x"06" or s_op = x"0E" or s_op = x"16" or s_op = x"1E" or s_op = x"26" or s_op = x"2E" or s_op = x"36") else '0';
-    s_op <= unsigned(op);
-    s_opx <= unsigned(opx);
+    s_branch <= '1' when (op = "000110" or op = "001110" or op = "010110" or op = "011110" or op = "100110" or op = "101110" or op = "110110") else '0';
+    
+    --s_branch <= '1' when (s_op = x"06" or s_op = x"0E" or s_op = x"16" or s_op = x"1E" or s_op = x"26" or s_op = x"2E" or s_op = x"36") else '0';
+    --s_op <= unsigned(op);
+    --s_opx <= unsigned(opx);
 
-    s_itype <= '1' when (current_state = JMPI or current_state = CALL or current_state = BRANCH or current_state = STORE  or current_state = LOAD1 or current_state = LOAD2 or current_state = I_OP) else '0';
-    s_rtype <= '1' when (current_state = JMP or current_state = CALLR or current_state = BREAK  or current_state = R_OP) else '0';
+    --s_itype <= '1' when (current_state = JMPI or current_state = CALL or current_state = BRANCH or current_state = STORE  or current_state = LOAD1 or current_state = LOAD2 or current_state = I_OP) else '0';
+    --s_rtype <= '1' when (current_state = JMP or current_state = CALLR or current_state = BREAK  or current_state = R_OP) else '0';
 
 process(clk, reset_n)
 begin
@@ -66,25 +68,41 @@ begin
     end if;
 end process;
 
+--next_state <= FETCH2 when current_state = FETCH1 else
+--            DECODE when current_state = FETCH2 else
+--            LOAD2 when current_state = LOAD1 else
+--            R_OP when current_state = DECODE and s_op = X"3A" and not(s_opx = X"3A" or s_opx = X"05" or s_opx = X"0D") else
+--            LOAD1 when current_state = DECODE and s_op = X"17"  else
+--            STORE when current_state = DECODE and s_op = X"15"  else
+--            BRANCH when current_state = DECODE and s_branch = '1' else 
+--            CALL when current_state = DECODE and s_op = X"00" else
+--            CALLR when current_state = DECODE and s_op = X"3A" and (s_opx = X"05") else
+--            JMP when current_state = DECODE and s_op = X"3A" and (s_opx = X"0D") else
+--            JMPI when current_state = DECODE and s_op = X"01" else
+--            BREAK when OTHERS;
+
+
 next_state <= FETCH2 when current_state = FETCH1 else
             DECODE when current_state = FETCH2 else
             LOAD2 when current_state = LOAD1 else
-            R_OP when current_state = DECODE and s_op = X"3A" and not(s_opx = X"3A" or s_opx = X"05" or s_opx = X"0D") else
-            LOAD1 when current_state = DECODE and s_op = X"17"  else
-            STORE when current_state = DECODE and s_op = X"15"  else
+            R_OP when current_state = DECODE and op = "111010" and not(opx = "111010" or opx = "000101" or opx = "001101") else
+            LOAD1 when current_state = DECODE and op = "010111"  else
+            STORE when current_state = DECODE and op = "010101"  else
             BRANCH when current_state = DECODE and s_branch = '1' else 
-            CALL when current_state = DECODE and s_op = X"00" else
-            CALLR when current_state = DECODE and s_op = X"3A" and (s_opx = X"05") else
-            JMP when current_state = DECODE and s_op = X"3A" and (s_opx = X"0D") else
-            JMPI when current_state = DECODE and s_op = X"01" else
+            CALL when current_state = DECODE and op = "000000" else
+            CALLR when current_state = DECODE and op = "111010" and (opx = "000101") else
+            JMP when current_state = DECODE and op = "111010" and (opx = "001101") else
+            JMPI when current_state = DECODE and op = "000001" else
             BREAK when OTHERS;
 
-            
-sel_addr <= '1' when (current_state = FETCH1 or current_state = LOAD1 or current_state = STORE) else '0';
-sel_pc <= '1' when (current_state = FETCH2 or current_state = CALL or current_state = CALLR) else '0';
-sel_b <= '1' when (current_state = R_OP or current_state = STORE) else '0';
-sel_mem <= '1' --mis ici pour l instant pas encore d info
+
+
+sel_addr <= '1' when (current_state = FETCH1 or current_state = LOAD1 or current_state = STORE) else '0'; --not sure about fetch1
+sel_pc <= '1' when (current_state = FETCH2 or current_state = CALL or current_state = CALLR) else '0'; --not sure about fetch2
+sel_b <= '1' when (current_state = R_OP or current_state = STORE or current_state = BRANCH) else '0';
+sel_mem <= '1' when current_state = LOAD2 else '0';
 sel_ra <= '1' when (current_state = CALL or current_state = CALLR) else '0';
+sel_rC <= '1' when current_state = R_OP else '0';
 
 
 pc_en <= '1' when s_pcEnable = '1' else '0';
