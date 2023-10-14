@@ -1,0 +1,17 @@
+
+State Machine - |GECKO|CPU:inst|controller:controller_0|current_state
+Name current_state.JMPI current_state.JMP current_state.CALLR current_state.CALL current_state.BRANCH current_state.LOAD2 current_state.LOAD1 current_state.I_OP current_state.R_OP current_state.STORE current_state.BREAK current_state.DECODE current_state.FETCH2 current_state.FETCH1 
+current_state.FETCH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.FETCH2 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.DECODE 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.BREAK 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.STORE 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.R_OP 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.I_OP 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.LOAD1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.LOAD2 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.BRANCH 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.CALL 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.CALLR 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.JMP 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.JMPI 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -42,7 +42,7 @@ architecture synth of controller is
 
     type state_type is (FETCH1 , FETCH2 , DECODE, BREAK, STORE, R_OP, I_OP, LOAD1, LOAD2, BRANCH, CALL, CALLR, JMP, JMPI);
     signal current_state, next_state : state_type;
-    signal s_op, s_opx : unsigned(5 downto 0);
+    --signal s_op, s_opx : unsigned(5 downto 0);
     signal s_branch : std_logic;
     signal s_wrEnable : std_logic;
     signal s_pcEnable : std_logic;
