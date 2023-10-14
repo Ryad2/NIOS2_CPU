@@ -1,0 +1,4 @@
+Time: 12.5 ns Input File Line: 8
+* Error: ir_en = '1' instead of '0'.
+ The IR has been enabled too soon.
+

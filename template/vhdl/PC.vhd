@@ -27,7 +27,7 @@ begin
     addr(15 downto 0) <= cur_addr;
 
     process (clk, reset_n)
-
+    begin
         if reset_n = '0' then
             cur_addr <= (others => '0');
 
@@ -42,8 +42,8 @@ begin
     next_addr <= std_logic_vector(unsigned(cur_addr) + 4) when en = '1'
         else std_logic_vector(unsigned(cur_addr) + unsigned(imm)) when add_imm = '1'
         else imm(13 downto 0) & "00" when sel_imm = '1'
-        else a(15 downto 2) & "00" when sel_a = '1';
-        else curr_addr;
+        else a(15 downto 2) & "00" when sel_a = '1'
+        else cur_addr;
     
 
 end synth;

@@ -1,5 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 
 entity controller is
     port(
@@ -93,7 +95,7 @@ next_state <= FETCH2 when current_state = FETCH1 else
             CALLR when current_state = DECODE and op = "111010" and (opx = "000101") else
             JMP when current_state = DECODE and op = "111010" and (opx = "001101") else
             JMPI when current_state = DECODE and op = "000001" else
-            BREAK when OTHERS;
+            BREAK;
 
 
 
@@ -171,6 +173,6 @@ op_alu <=
         -- sra
         "11-111" when (op = "111010" and opx = "111011") or (op = "111010" and opx = "111010") else
         -- dontcare
-        "------" when OTHERS;
+        "------";
 
 end synth;
