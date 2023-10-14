@@ -22,7 +22,7 @@ architecture synth of register_file is
 
 begin
 
-    reg(0) <= (others => '0'); 
+    --reg(0) <= (others => '0'); 
 
     process(clk, wren, aw, wrdata)
     begin
@@ -31,6 +31,7 @@ begin
                 if aw = "00000" then
                     reg(0) <= (others => '0'); 
                 else 
+                    reg(0) <= (others => '0');
                     reg(to_integer(unsigned(aw))) <= wrdata;
                 end if;
             end if;
