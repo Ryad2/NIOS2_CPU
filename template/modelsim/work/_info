@@ -9,24 +9,24 @@ z2
 cModel Technology
 dC:/Users/HP PC/Google Drive/Teaching/ArchOrd Mirjana/3-multicycle_niosII-workinprogress/project_template/modelsim
 Eadd_sub
-Z0 w1697277787
+Z0 w1697469913
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/modelsim
-Z5 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/add_sub.vhd
-Z6 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/add_sub.vhd
+Z4 dC:/Users/aouak/Desktop/Lab3_CompARCH/template/modelsim
+Z5 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd
+Z6 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd
 l0
 L5
 V207_zj^V^3XmVFBkYPT0^3
 !s100 Ho^oT``GLJUNf<W@=D9Un1
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1697460941
+Z8 !s110 1697472698
 !i10b 1
-Z9 !s108 1697460941.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/add_sub.vhd|
-Z11 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/add_sub.vhd|
+Z9 !s108 1697472698.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd|
+Z11 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -54,19 +54,19 @@ R0
 R2
 R3
 R4
-Z14 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ALU.vhd
-Z15 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ALU.vhd
+Z14 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ALU.vhd
+Z15 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ALU.vhd
 l0
 L24
 VLIV0?b]kCZ40<iPbTC=4:2
 !s100 O`l`Xc5c_V9`dzon<W_fQ2
 R7
 32
-Z16 !s110 1697460939
+R8
 !i10b 1
-Z17 !s108 1697460939.000000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ALU.vhd|
-Z19 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ALU.vhd|
+R9
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ALU.vhd|
+Z17 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ALU.vhd|
 !i113 1
 R12
 R13
@@ -80,11 +80,11 @@ Vn7Jhlm<g3=Igo4gAY0?Z=3
 !s100 ao^@A8=RSg[FW?jY:[EXI0
 R7
 32
-R16
+R8
 !i10b 1
+R9
+R16
 R17
-R18
-R19
 !i113 1
 R12
 R13
@@ -94,19 +94,19 @@ R1
 R2
 R3
 R4
-Z20 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/buttons.vhd
-Z21 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/buttons.vhd
+Z18 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd
+Z19 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd
 l0
 L5
 V6nKA>6XmzI`j>a@n4^6Pn2
 !s100 =22bV77NIHzbkEY31]2hQ2
 R7
 32
-Z22 !s110 1697460940
+Z20 !s110 1697472696
 !i10b 1
-Z23 !s108 1697460940.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/buttons.vhd|
-Z25 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/buttons.vhd|
+Z21 !s108 1697472696.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd|
+Z23 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd|
 !i113 1
 R12
 R13
@@ -121,22 +121,22 @@ Vz=5DD3`[2T_e1Tj`RUBgR3
 !s100 l:Q7JXKFoP5Z9FQDUXG9]3
 R7
 32
-R22
+R20
 !i10b 1
+R21
+R22
 R23
-R24
-R25
 !i113 1
 R12
 R13
 Pcheck_functions
-Z26 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z24 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R2
 R3
 R0
 R4
-Z27 8../testbench/check_functions.vhd
-Z28 F../testbench/check_functions.vhd
+Z25 8../testbench/check_functions.vhd
+Z26 F../testbench/check_functions.vhd
 l0
 L6
 V6aLKC8M`WFbUTzDPW6He83
@@ -144,17 +144,17 @@ V6aLKC8M`WFbUTzDPW6He83
 R7
 31
 b1
-Z29 !s110 1697460951
+Z27 !s110 1697472705
 !i10b 1
-Z30 !s108 1697460951.000000
-Z31 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
-Z32 !s107 ../testbench/check_functions.vhd|
+Z28 !s108 1697472705.000000
+Z29 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
+Z30 !s107 ../testbench/check_functions.vhd|
 !i113 1
 o-93
 R13
 Bbody
-Z33 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
-R26
+Z31 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
+R24
 R2
 R3
 l0
@@ -163,11 +163,11 @@ Vl_?7YlfeIC=0oLhh:^F<e2
 !s100 ]Ul<gd[SNh_SV]VQVO[::0
 R7
 31
-R29
+R27
 !i10b 1
+R28
+R29
 R30
-R31
-R32
 !i113 1
 o-93
 R13
@@ -176,19 +176,19 @@ R0
 R2
 R3
 R4
-Z34 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/comparator.vhd
-Z35 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/comparator.vhd
+Z32 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd
+Z33 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd
 l0
 L4
 V3WXakLjKGIMC9fTC_zAJG3
 !s100 XTWoF>RX1>LcmLLBBo;N:0
 R7
 32
-R22
+R20
 !i10b 1
-R23
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/comparator.vhd|
-Z37 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/comparator.vhd|
+R21
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd|
+Z35 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd|
 !i113 1
 R12
 R13
@@ -202,33 +202,33 @@ Vbei9CKO2_hlCNICW2ddWX2
 !s100 AD5oUBMITA_gYb<b@keXU3
 R7
 32
-R22
+R20
 !i10b 1
-R23
-R36
-R37
+R21
+R34
+R35
 !i113 1
 R12
 R13
 Econtroller
-Z38 w1697460918
+Z36 w1697472692
 R1
 R2
 R3
 R4
-Z39 8../vhdl/controller.vhd
-Z40 F../vhdl/controller.vhd
+Z37 8../vhdl/controller.vhd
+Z38 F../vhdl/controller.vhd
 l0
 L6
 V7g]AFSm18O;[GmU^1?F723
 !s100 KIT]e57<ldOY8SzjUI^F>0
 R7
 31
-R29
+R27
 !i10b 1
-R30
-Z41 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
-Z42 !s107 ../vhdl/controller.vhd|
+R28
+Z39 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
+Z40 !s107 ../vhdl/controller.vhd|
 !i113 1
 o-93
 R13
@@ -237,17 +237,17 @@ R1
 R2
 R3
 DEx4 work 10 controller 0 22 7g]AFSm18O;[GmU^1?F723
-l51
+l52
 L41
-Vcl<`hao3NlhBNhhaYD=Iz0
-!s100 P>jLeh;Kig5QOHT>=_LP32
+VOngjaCnX^7J78[E>_NeAO0
+!s100 CcKmLz:lfW1P^gj]dolYa0
 R7
 31
-R29
+R27
 !i10b 1
-R30
-R41
-R42
+R28
+R39
+R40
 !i113 1
 o-93
 R13
@@ -256,19 +256,19 @@ R0
 R2
 R3
 R4
-Z43 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/CPU.vhd
-Z44 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/CPU.vhd
+Z41 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/CPU.vhd
+Z42 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/CPU.vhd
 l0
 L24
 VoN1Z@H62cOJ8j76FSZXfk0
 !s100 ?^3E^YkUK_jO8j=PLQg0X0
 R7
 32
-R22
+R20
 !i10b 1
-R23
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/CPU.vhd|
-Z46 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/CPU.vhd|
+R21
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/CPU.vhd|
+Z44 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/CPU.vhd|
 !i113 1
 R12
 R13
@@ -282,33 +282,33 @@ VU_VbP>G_0>o[AHnGEJ`7A2
 !s100 nj]fOeJzKgV2QQoiYJ37e2
 R7
 32
-R22
+R20
 !i10b 1
-R23
-R45
-R46
+R21
+R43
+R44
 !i113 1
 R12
 R13
 Edecoder
-Z47 w1697278764
+R0
 R1
 R2
 R3
 R4
-Z48 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/decoder.vhd
-Z49 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/decoder.vhd
+Z45 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd
+Z46 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd
 l0
 L5
 VdVPPG90IhOIULClZ>dGSU3
 !s100 [=GD<ThUYhT?2dg2ooP7P1
 R7
 32
-R22
+Z47 !s110 1697472697
 !i10b 1
-R23
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/decoder.vhd|
-Z51 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/decoder.vhd|
+R21
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd|
+Z49 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd|
 !i113 1
 R12
 R13
@@ -323,11 +323,11 @@ VhHBn<lQ6285:4^Oe>13gm2
 !s100 [GD^@CL>i8:ZVl?Bb0<^[3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R50
-R51
+R21
+R48
+R49
 !i113 1
 R12
 R13
@@ -336,19 +336,19 @@ R0
 R2
 R3
 R4
-Z52 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/extend.vhd
-Z53 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/extend.vhd
+Z50 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd
+Z51 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd
 l0
 L4
 VUL_6DHeRdI@k7FglXE4m:2
 !s100 [OER<nle^Gzi[Q]KGKSL33
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/extend.vhd|
-Z55 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/extend.vhd|
+Z52 !s108 1697472697.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd|
+Z54 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd|
 !i113 1
 R12
 R13
@@ -362,11 +362,11 @@ V7Ko3h?gI2cS2bC3HGI:;41
 !s100 <8Fc9P8nCYa6gmRCFCh6Q1
 R7
 32
-R22
+R47
 !i10b 1
-R23
+R52
+R53
 R54
-R55
 !i113 1
 R12
 R13
@@ -375,58 +375,58 @@ R0
 R2
 R3
 R4
-Z56 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/GECKO.vhd
-Z57 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/GECKO.vhd
+Z55 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/GECKO.vhd
+Z56 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/GECKO.vhd
 l0
 L25
 VUUo[=d8;JL2NUd?KL5z>W3
 !s100 LSB69=RnS?7B=e740[]>J0
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/GECKO.vhd|
-Z59 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/GECKO.vhd|
+R52
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/GECKO.vhd|
+Z58 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/GECKO.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R2
 R3
-Z60 DEx4 work 5 gecko 0 22 UUo[=d8;JL2NUd?KL5z>W3
+Z59 DEx4 work 5 gecko 0 22 UUo[=d8;JL2NUd?KL5z>W3
 l122
 L42
 VXW8hfda?:0fgXTELaMc<M2
 !s100 6_aIkK46>FzI3D:<OBG:Z1
 R7
 32
-R22
+R47
 !i10b 1
-R23
+R52
+R57
 R58
-R59
 !i113 1
 R12
 R13
 Eir
-Z61 w1697457104
+R0
 R2
 R3
 R4
-Z62 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/IR.vhd
-Z63 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/IR.vhd
+Z60 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd
+Z61 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd
 l0
 L4
 V^D0Sz[@@D76hLF6hc_Qm`1
 !s100 g>VC3<ZiU9SUL1eB^Hc9_3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/IR.vhd|
-Z65 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/IR.vhd|
+R52
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd|
+Z63 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd|
 !i113 1
 R12
 R13
@@ -440,11 +440,11 @@ Vk>db4<o_mTDR6Tl5jg^<_2
 !s100 GbK3I2[BFL;gMf3zX7QHX3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R64
-R65
+R52
+R62
+R63
 !i113 1
 R12
 R13
@@ -454,19 +454,19 @@ R1
 R2
 R3
 R4
-Z66 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/LEDs.vhd
-Z67 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/LEDs.vhd
+Z64 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd
+Z65 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd
 l0
 L5
 V82^IRfHNag^>;Yc>Z[nm>3
 !s100 LBhnQz<diU;5h1EbFfFEW1
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/LEDs.vhd|
-Z69 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/LEDs.vhd|
+R52
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd|
+Z67 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd|
 !i113 1
 R12
 R13
@@ -481,11 +481,11 @@ V]cELLS]GDUdVTSZZ0nkQ`2
 !s100 :XaGV=61A<iIVbj8VQ?BQ0
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R68
-R69
+R52
+R66
+R67
 !i113 1
 R12
 R13
@@ -494,19 +494,19 @@ R0
 R2
 R3
 R4
-Z70 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/logic_unit.vhd
-Z71 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/logic_unit.vhd
+Z68 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd
+Z69 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd
 l0
 L4
 VfUEL39DQfcR_XLk:Hoe<f3
 !s100 UJioXKUg8XUULGTSe2WE20
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/logic_unit.vhd|
-Z73 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/logic_unit.vhd|
+R52
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd|
+Z71 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd|
 !i113 1
 R12
 R13
@@ -520,11 +520,11 @@ VH=2cAJzT89o<=RY=<A9d=3
 !s100 2nIhhkR<3S42VZhNnD6K>3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R72
-R73
+R52
+R70
+R71
 !i113 1
 R12
 R13
@@ -533,19 +533,19 @@ R0
 R2
 R3
 R4
-Z74 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/multiplexer.vhd
-Z75 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/multiplexer.vhd
+Z72 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd
+Z73 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd
 l0
 L4
 V4iH6`nZgBAHVia??bJk>G2
 !s100 UDM^5ga=kb9Z[=K^]bghV0
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/multiplexer.vhd|
-Z77 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/multiplexer.vhd|
+R52
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd|
+Z75 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd|
 !i113 1
 R12
 R13
@@ -559,11 +559,11 @@ VhFCB`FO2hS5`M_=Gg8fb;1
 !s100 5kS<gU<FIYXQD5<nF;h6U0
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R76
-R77
+R52
+R74
+R75
 !i113 1
 R12
 R13
@@ -572,19 +572,19 @@ R0
 R2
 R3
 R4
-Z78 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd
-Z79 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd
+Z76 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd
+Z77 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd
 l0
 L4
 VaHOL`3MF?g?d`[6<SJm^e1
 !s100 ]AkMHg3_OS9:k6cjVd[b:3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd|
-Z81 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd|
+R52
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd|
+Z79 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd|
 !i113 1
 R12
 R13
@@ -598,11 +598,11 @@ V0:8ma>PDQ9e3VMI<co^GO1
 !s100 @=7i0YJ8_B@UW6V1kld;82
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R80
-R81
+R52
+R78
+R79
 !i113 1
 R12
 R13
@@ -611,19 +611,19 @@ R0
 R2
 R3
 R4
-Z82 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x32.vhd
-Z83 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x32.vhd
+Z80 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd
+Z81 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd
 l0
 L4
 V5<9;E?13m3J1aF01KEAAR1
 !s100 Iab^5l@hZCaSi22IEjFiN0
 R7
 32
-R8
+R47
 !i10b 1
-R9
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x32.vhd|
-Z85 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x32.vhd|
+R52
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd|
+Z83 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd|
 !i113 1
 R12
 R13
@@ -637,11 +637,11 @@ Vz3Mo95W^HZACZ0iCkAae81
 !s100 ZF[18o]9G5Um:nz`EZ5dP0
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R84
-R85
+R52
+R82
+R83
 !i113 1
 R12
 R13
@@ -650,19 +650,19 @@ R0
 R2
 R3
 R4
-Z86 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x5.vhd
-Z87 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x5.vhd
+Z84 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd
+Z85 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd
 l0
 L4
 VW@GMgb]B=<MlVOlGRRM2i3
 !s100 A96?gLbg3Wafg>1JToSDm3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x5.vhd|
-Z89 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x5.vhd|
+R52
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd|
+Z87 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd|
 !i113 1
 R12
 R13
@@ -676,23 +676,23 @@ V`X5Rh=Qf^17G8I2Af=C6:1
 !s100 M;PhMa;N8DHC0AfhKFZKF3
 R7
 32
-R22
+R47
 !i10b 1
-R23
-R88
-R89
+R52
+R86
+R87
 !i113 1
 R12
 R13
 Ppack
-Z90 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z91 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z88 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z89 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
 R3
 R0
 R4
-Z92 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/rgb_led96.vhd
-Z93 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/rgb_led96.vhd
+Z90 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/rgb_led96.vhd
+Z91 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/rgb_led96.vhd
 l0
 L12
 VSgkf7C>zV<_V6E^@jUKD^3
@@ -700,18 +700,18 @@ VSgkf7C>zV<_V6E^@jUKD^3
 R7
 32
 b1
-R8
+R47
 !i10b 1
-R9
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/rgb_led96.vhd|
-Z95 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/rgb_led96.vhd|
+R52
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/rgb_led96.vhd|
+Z93 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/rgb_led96.vhd|
 !i113 1
 R12
 R13
 Bbody
-Z96 DPx4 work 4 pack 0 22 Sgkf7C>zV<_V6E^@jUKD^3
-R90
-R91
+Z94 DPx4 work 4 pack 0 22 Sgkf7C>zV<_V6E^@jUKD^3
+R88
+R89
 R2
 R3
 l0
@@ -720,33 +720,33 @@ VQ[i6CQaWYOi37nk]<RCBH3
 !s100 8]CiCz8GM]b_8`cfK=T:`2
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R94
-R95
+R52
+R92
+R93
 !i113 1
 R12
 R13
 Epc
-Z97 w1697456489
+R0
 R1
 R2
 R3
 R4
-Z98 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd
-Z99 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd
+Z95 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd
+Z96 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd
 l0
 L5
 VL1PS=`^7Dom5JHh`oiS8z0
 !s100 Vz;DIYb[AY;g5[laVME<e3
 R7
 32
-R8
+R47
 !i10b 1
-R9
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd|
-Z101 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd|
+R52
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd|
+Z98 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd|
 !i113 1
 R12
 R13
@@ -761,11 +761,11 @@ V<BdPMIHGA<jaL>N9ekaYn3
 !s100 _egH_<6UGU3GkX?b9`>ED2
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R100
-R101
+R52
+R97
+R98
 !i113 1
 R12
 R13
@@ -775,19 +775,19 @@ R1
 R2
 R3
 R4
-Z102 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/RAM.vhd
-Z103 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/RAM.vhd
+Z99 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd
+Z100 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd
 l0
 L5
 VJiWAmLGUWmdVPB8L2QZ[D3
 !s100 9O>00CFElD4PLMkihiTWm3
 R7
 32
-R8
+R47
 !i10b 1
-R9
-Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/RAM.vhd|
-Z105 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/RAM.vhd|
+R52
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd|
+Z102 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd|
 !i113 1
 R12
 R13
@@ -802,33 +802,33 @@ V<70E=7MX>]ifJZCzhFfW]2
 !s100 ;STVdG7a=23d0PJR<H78d2
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R104
-R105
+R52
+R101
+R102
 !i113 1
 R12
 R13
 Eregister_file
-Z106 w1697285661
+R0
 R1
 R2
 R3
 R4
-Z107 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/register_file.vhd
-Z108 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/register_file.vhd
+Z103 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd
+Z104 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd
 l0
 L5
 VhQYRZ<6ijZW2:hk46k4IZ2
 !s100 _;mToXbZzY:WVO^oMIJ;J3
 R7
 32
-R8
+R47
 !i10b 1
-R9
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/register_file.vhd|
-Z110 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/register_file.vhd|
+R52
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd|
+Z106 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd|
 !i113 1
 R12
 R13
@@ -843,42 +843,42 @@ Vm2MO:iSmTJ2`ZcRd48>Oo3
 !s100 CWEVh2TZkl@9f?8zWY0o>0
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R109
-R110
+R52
+R105
+R106
 !i113 1
 R12
 R13
 Ergb_led96
 R0
-R96
-R91
-R90
+R94
+R89
+R88
 R2
 R3
 R4
-R92
-R93
+R90
+R91
 l0
 L46
 VDn00^;b6BmV8c[7[]6<CU2
 !s100 X:YKB@hW0<LC:6C595LeJ0
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R94
-R95
+R52
+R92
+R93
 !i113 1
 R12
 R13
 Aarch
-R96
-R91
-R90
+R94
+R89
+R88
 R2
 R3
 DEx4 work 9 rgb_led96 0 22 Dn00^;b6BmV8c[7[]6<CU2
@@ -888,11 +888,11 @@ VVMLEXCQSI_@JdCBGa]SIz1
 !s100 g<aGZ1bIK0AWZCQOUK`ba3
 R7
 32
-R8
+R47
 !i10b 1
-R9
-R94
-R95
+R52
+R92
+R93
 !i113 1
 R12
 R13
@@ -901,8 +901,8 @@ R0
 R2
 R3
 R4
-Z111 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM.vhd
-Z112 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM.vhd
+Z107 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd
+Z108 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd
 l0
 L4
 VLD>LKJh0<<KfR_G::f?6B1
@@ -911,9 +911,9 @@ R7
 32
 R8
 !i10b 1
-R9
-Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM.vhd|
-Z114 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM.vhd|
+R52
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd|
+Z110 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd|
 !i113 1
 R12
 R13
@@ -929,20 +929,20 @@ R7
 32
 R8
 !i10b 1
-R9
-R113
-R114
+R52
+R109
+R110
 !i113 1
 R12
 R13
 Erom_block
 R0
-Z115 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z111 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
 R2
 R3
 R4
-Z116 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM_Block.vhd
-Z117 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM_Block.vhd
+Z112 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd
+Z113 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd
 l0
 L42
 VXTla>B]TM@5ojGOSe6UD^3
@@ -952,13 +952,13 @@ R7
 R8
 !i10b 1
 R9
-Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM_Block.vhd|
-Z119 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/ROM_Block.vhd|
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd|
+Z115 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd|
 !i113 1
 R12
 R13
 Asyn
-R115
+R111
 R2
 R3
 DEx4 work 9 rom_block 0 22 XTla>B]TM@5ojGOSe6UD^3
@@ -971,8 +971,8 @@ R7
 R8
 !i10b 1
 R9
-R118
-R119
+R114
+R115
 !i113 1
 R12
 R13
@@ -982,8 +982,8 @@ R1
 R2
 R3
 R4
-Z120 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/shift_unit.vhd
-Z121 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/shift_unit.vhd
+Z116 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd
+Z117 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd
 l0
 L5
 VoYz=ZP:Rg2U9Eb=ZGo>940
@@ -993,8 +993,8 @@ R7
 R8
 !i10b 1
 R9
-Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/shift_unit.vhd|
-Z123 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/shift_unit.vhd|
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd|
+Z119 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd|
 !i113 1
 R12
 R13
@@ -1012,38 +1012,38 @@ R7
 R8
 !i10b 1
 R9
-R122
-R123
+R118
+R119
 !i113 1
 R12
 R13
 Etb_controller
 R0
-R33
-R26
+R31
+R24
 R1
 R2
 R3
 R4
-Z124 8../testbench/tb_Controller.vhd
-Z125 F../testbench/tb_Controller.vhd
+Z120 8../testbench/tb_Controller.vhd
+Z121 F../testbench/tb_Controller.vhd
 l0
 L9
 V3E@KN_PfWzKDMi@e_IcgN1
 !s100 QPYMI?@zF<fA]gVd9c[kS0
 R7
 31
-R29
+R27
 !i10b 1
-R30
-Z126 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
-Z127 !s107 ../testbench/tb_Controller.vhd|
+R28
+Z122 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
+Z123 !s107 ../testbench/tb_Controller.vhd|
 !i113 1
 o-93
 R13
 Atestbench
-R33
-R26
+R31
+R24
 R1
 R2
 R3
@@ -1051,43 +1051,43 @@ DEx4 work 13 tb_controller 0 22 3E@KN_PfWzKDMi@e_IcgN1
 l102
 L15
 V3M1BHZOYlAHk5ZM;AdXib3
-Z128 !s100 _WkzDDFBPd:3LHMWS[AoW2
+Z124 !s100 _WkzDDFBPd:3LHMWS[AoW2
 R7
 31
-R29
+R27
 !i10b 1
-R30
-R126
-R127
+R28
+R122
+R123
 !i113 1
 o-93
 R13
 Etb_extend
 R0
-R33
-R26
+Z125 DPx4 work 15 check_functions 0 22 <W1[dk2LN3hi[c?7kCXRb3
+R24
 R2
 R3
 R4
-Z129 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_Extend.vhd
-Z130 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_Extend.vhd
+Z126 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_Extend.vhd
+Z127 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_Extend.vhd
 l0
 L8
 Vaaa357Ec4Z]hSVLzLa]`V0
 !s100 bW1ZJ800R3O0<C<7nO4h:1
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_Extend.vhd|
-Z132 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_Extend.vhd|
+R21
+Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_Extend.vhd|
+Z129 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_Extend.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R33
-R26
+R125
+R24
 R2
 R3
 DEx4 work 9 tb_extend 0 22 aaa357Ec4Z]hSVLzLa]`V0
@@ -1097,11 +1097,11 @@ VSUC:NKCMTg8:IYKgIcGd30
 !s100 f><EEJh?:BbXgSC^g?0XG2
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R131
-R132
+R21
+R128
+R129
 !i113 1
 R12
 R13
@@ -1110,24 +1110,24 @@ R0
 R2
 R3
 R4
-Z133 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_GECKO.vhd
-Z134 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_GECKO.vhd
+Z130 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_GECKO.vhd
+Z131 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_GECKO.vhd
 l0
 L4
 V5Tbz7Kl=147iIIz>>A8Y[3
 !s100 M92[;29_Yc:FoKCCIgj]?0
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_GECKO.vhd|
-Z136 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_GECKO.vhd|
+R21
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_GECKO.vhd|
+Z133 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_GECKO.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R60
+R59
 R2
 R3
 DEx4 work 8 tb_gecko 0 22 5Tbz7Kl=147iIIz>>A8Y[3
@@ -1137,40 +1137,40 @@ V6fQEk`>ELI8^:O]bcf[0k0
 !s100 1395I=^FjK==Lo:2:Ck6c3
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R135
-R136
+R21
+R132
+R133
 !i113 1
 R12
 R13
 Etb_ir
 R0
-R33
-R26
+R31
+R24
 R2
 R3
 R4
-Z137 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_IR.vhd
-Z138 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_IR.vhd
+Z134 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_IR.vhd
+Z135 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_IR.vhd
 l0
 L8
 VNa]DdS==`51QO9@9@NCYO3
 !s100 dO7:P:CO76Dg9T_Q>3Mi:2
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_IR.vhd|
-Z140 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_IR.vhd|
+R21
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_IR.vhd|
+Z137 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_IR.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R33
-R26
+R31
+R24
 R2
 R3
 DEx4 work 5 tb_ir 0 22 Na]DdS==`51QO9@9@NCYO3
@@ -1180,40 +1180,40 @@ VFC]h]m]T]Ph2`Z>Ki^a?Z2
 !s100 g?YUbkdlEmZ2JbBY[dbba0
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R139
-R140
+R21
+R136
+R137
 !i113 1
 R12
 R13
 Etb_pc
 R0
-R33
-R26
+R31
+R24
 R2
 R3
 R4
-Z141 8C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_PC.vhd
-Z142 FC:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_PC.vhd
+Z138 8C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_PC.vhd
+Z139 FC:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_PC.vhd
 l0
 L8
 VZbiH9]DK4fmMF;^e8W7zF1
 !s100 _Sjg^6a@flK7I1KVlG]Sm2
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_PC.vhd|
-Z144 !s107 C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/testbench/tb_PC.vhd|
+R21
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_PC.vhd|
+Z141 !s107 C:/Users/aouak/Desktop/Lab3_CompARCH/template/testbench/tb_PC.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R33
-R26
+R31
+R24
 R2
 R3
 DEx4 work 5 tb_pc 0 22 ZbiH9]DK4fmMF;^e8W7zF1
@@ -1223,11 +1223,11 @@ V;4TRg:;B=`LN4JkHFOfZH3
 !s100 gKH@n?YGO`P>Bz<MRbX@K0
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R143
-R144
+R21
+R140
+R141
 !i113 1
 R12
 R13

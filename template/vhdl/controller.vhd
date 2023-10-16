@@ -47,6 +47,7 @@ architecture synth of controller is
     signal s_wrEnable : std_logic;
     signal s_pcEnable : std_logic;
     signal s_R_IOP : std_logic;
+    signal s_U_IOP : std_logic;
 
 begin
 
@@ -54,6 +55,7 @@ begin
     s_wrEnable <= '1' when (current_state = I_OP or current_state = R_OP or current_state = LOAD2 or current_state = CALL or current_state = CALLR) else '0';
     s_branch <= '1' when (op = "000110" or op = "001110" or op = "010110" or op = "011110" or op = "100110" or op = "101110" or op = "110110") else '0';
     s_R_IOP <= '1' when (opx = "000010") or (opx = "111010") or (opx = "011010") or (opx = "010010") else '0';
+    s_U_IOP <= '1' when (op = "001100") or (op = "010100") or (op = "011100") or (op = "101000") or (op = "110000") else '0';
     --s_branch <= '1' when (s_op = x"06" or s_op = x"0E" or s_op = x"16" or s_op = x"1E" or s_op = x"26" or s_op = x"2E" or s_op = x"36") else '0';
     --s_op <= unsigned(op);
     --s_opx <= unsigned(opx);
@@ -93,8 +95,8 @@ next_state <= FETCH2 when current_state = FETCH1 else
             STORE when current_state = DECODE and op = "010101"  else
             BRANCH when current_state = DECODE and s_branch = '1' else 
             CALL when current_state = DECODE and op = "000000" else
-            CALLR when current_state = DECODE and op = "111010" and (opx = "000101") else
-            JMP when current_state = DECODE and op = "111010" and (opx = "001101") else
+            CALLR when current_state = DECODE and op = "111010" and (opx = "011101") else
+            JMP when current_state = DECODE and op = "111010" and (opx = "001101" or opx = "000101")   else
             JMPI when current_state = DECODE and op = "000001" else
             R_OP when current_state = DECODE and op = "111010" else
             I_OP when current_state = DECODE else
@@ -118,7 +120,7 @@ pc_sel_a <= '1' when (current_state = CALLR or current_state = JMP) else '0';
 
 ir_en <= '1' when current_state = FETCH2  else '0';
 rf_wren <= '1' when s_wrEnable = '1'  else '0';
-imm_signed <= '1' when (current_state = I_OP or current_state = LOAD1 or current_state = STORE) else '0';
+imm_signed <= '1' when ((current_state = I_OP and s_U_IOP = '0') or current_state = LOAD1 or current_state = STORE) else '0';
 branch_op <= '1' when current_state = BRANCH else '0';
 
 
@@ -146,17 +148,17 @@ op_alu <=
         -- sub
         "001---" when (op = "111010" and opx = "111001") else
         -- <= s
-        "011001" when op = "001000" or (op = "111010" and opx = "001000") else
+        "011001" when op = "001000" or op = "000110" or op = "001110" or (op = "111010" and opx = "001000") else
         -- > s
-        "011010" when op = "010000" or (op = "111010" and opx = "010000") else
+        "011010" when op = "010000" or op = "010110" or (op = "111010" and opx = "010000") else
         -- !=
-        "011011" when op = "011000" or (op = "111010" and opx = "011000") else
+        "011011" when op = "011000" or op = "011110" or (op = "111010" and opx = "011000") else
         -- ==
-        "011100" when op = "100000" or (op = "111010" and opx = "100000") else
+        "011100" when op = "100000" or op = "100110" or (op = "111010" and opx = "100000") else
         -- <= u
-        "011101" when op = "101000" or (op = "111010" and opx = "101000") else
+        "011101" when op = "101000" or op = "101110" or (op = "111010" and opx = "101000") else
         -- > u
-        "011110" when op = "110000" or (op = "111010" and opx = "110000") else
+        "011110" when op = "110000" or op = "110110" or (op = "111010" and opx = "110000") else
         -- nor
         "10--00" when (op = "111010" and opx = "000110") else
         -- and
