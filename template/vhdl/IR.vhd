@@ -11,15 +11,20 @@ entity IR is
 end IR;
 
 architecture synth of IR is
+
+    signal s_D : std_logic_vector(31 downto 0);
+
 begin
 
     process(clk)
     begin
         if rising_edge(clk) then
             if enable = '1' then
-                Q <= D;
+                s_D <= D;
             end if;
         end if;
     end process;
+
+    Q <= s_D;
     
 end synth;

@@ -46,13 +46,14 @@ architecture synth of controller is
     signal s_branch : std_logic;
     signal s_wrEnable : std_logic;
     signal s_pcEnable : std_logic;
+    signal s_R_IOP : std_logic;
 
 begin
 
     s_pcEnable <= '1' when (current_state = FETCH2 or current_state = CALL or current_state = CALLR or current_state = JMP or current_state = JMPI) else '0';
     s_wrEnable <= '1' when (current_state = I_OP or current_state = R_OP or current_state = LOAD2 or current_state = CALL or current_state = CALLR) else '0';
     s_branch <= '1' when (op = "000110" or op = "001110" or op = "010110" or op = "011110" or op = "100110" or op = "101110" or op = "110110") else '0';
-    
+    s_R_IOP <= '1' when (opx = "000010") or (opx = "111010") or (opx = "011010") or (opx = "010010") else '0';
     --s_branch <= '1' when (s_op = x"06" or s_op = x"0E" or s_op = x"16" or s_op = x"1E" or s_op = x"26" or s_op = x"2E" or s_op = x"36") else '0';
     --s_op <= unsigned(op);
     --s_opx <= unsigned(opx);
@@ -87,7 +88,7 @@ end process;
 next_state <= FETCH2 when current_state = FETCH1 else
             DECODE when current_state = FETCH2 else
             LOAD2 when current_state = LOAD1 else
-            R_OP when current_state = DECODE and op = "111010" and not(opx = "111010" or opx = "000101" or opx = "001101") else
+            BREAK when (current_state = DECODE and op = "111010" and opx = "110100") or current_state = BREAK else
             LOAD1 when current_state = DECODE and op = "010111"  else
             STORE when current_state = DECODE and op = "010101"  else
             BRANCH when current_state = DECODE and s_branch = '1' else 
@@ -95,13 +96,15 @@ next_state <= FETCH2 when current_state = FETCH1 else
             CALLR when current_state = DECODE and op = "111010" and (opx = "000101") else
             JMP when current_state = DECODE and op = "111010" and (opx = "001101") else
             JMPI when current_state = DECODE and op = "000001" else
-            BREAK;
+            R_OP when current_state = DECODE and op = "111010" else
+            I_OP when current_state = DECODE else
+            FETCH1;
 
 
 
-sel_addr <= '1' when (current_state = FETCH1 or current_state = LOAD1 or current_state = STORE) else '0'; --not sure about fetch1
-sel_pc <= '1' when (current_state = FETCH2 or current_state = CALL or current_state = CALLR) else '0'; --not sure about fetch2
-sel_b <= '1' when (current_state = R_OP or current_state = STORE or current_state = BRANCH) else '0';
+sel_addr <= '1' when (current_state = LOAD1 or current_state = STORE) else '0'; --not sure about fetch1
+sel_pc <= '1' when ( current_state = CALL or current_state = CALLR) else '0'; --not sure about fetch2
+sel_b <= '1' when ((current_state = R_OP and s_R_IOP = '0')  or current_state = BRANCH) else '0'; --or current_state = STORE
 sel_mem <= '1' when current_state = LOAD2 else '0';
 sel_ra <= '1' when (current_state = CALL or current_state = CALLR) else '0';
 sel_rC <= '1' when current_state = R_OP else '0';
@@ -113,9 +116,9 @@ pc_sel_imm <= '1' when (current_state = CALL or current_state = JMPI) else '0';
 pc_sel_a <= '1' when (current_state = CALLR or current_state = JMP) else '0';
 
 
-ir_en <= '1' when current_state = FETCH2 else '0';
-rf_wren <= '1' when s_wrEnable = '1' else '0';
-imm_signed <= '1' when current_state = I_OP else '0';
+ir_en <= '1' when current_state = FETCH2  else '0';
+rf_wren <= '1' when s_wrEnable = '1'  else '0';
+imm_signed <= '1' when (current_state = I_OP or current_state = LOAD1 or current_state = STORE) else '0';
 branch_op <= '1' when current_state = BRANCH else '0';
 
 
@@ -163,7 +166,8 @@ op_alu <=
         -- xnor
         "10--11" when op = "011100" or (op = "111010" and opx = "011110") else
         -- rol
-        "11-000" when (op = "111010" and opx = "000011") else
+        "11-000" when (op = "111010" and (opx = "000011" or opx = "000010" ) ) else
+
         -- ror
         "11-001" when (op = "111010" and opx = "001011") else
         -- sll
@@ -172,7 +176,8 @@ op_alu <=
         "11-011" when (op = "111010" and opx = "011011") or (op = "111010" and opx = "011010") else
         -- sra
         "11-111" when (op = "111010" and opx = "111011") or (op = "111010" and opx = "111010") else
+
         -- dontcare
-        "------";
+        "000000";
 
 end synth;

@@ -243,15 +243,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity GECKO
 -- Compiling architecture bdf_type of GECKO
 
-} {} {}} C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/PC.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity PC
--- Compiling architecture synth of PC
-
 } {} {}} C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aouak/Desktop/14.10.2023/Lab3_CompARCH/template/vhdl/mux2x16.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
