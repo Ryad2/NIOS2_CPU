@@ -61,7 +61,7 @@ BEGIN
 		address_aclr_a => "NONE",
 		clock_enable_input_a => "BYPASS",
 		clock_enable_output_a => "BYPASS",
-		init_file => "C:\Users\cristini\Desktop\Template-20230927\template\quartus\ROM.hex",
+		init_file => "C:\Users\cristini\Desktop\Lab3_CompARCH\template\quartus\ROM.hex",
 		intended_device_family => "Cyclone V",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",

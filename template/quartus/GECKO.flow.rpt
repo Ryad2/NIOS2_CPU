@@ -1,5 +1,5 @@
 Flow report for GECKO
-Sat Oct 14 14:41:42 2023
+Thu Oct 19 21:33:34 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Oct 14 14:41:38 2023       ;
+; Flow Status                        ; Successful - Thu Oct 19 21:33:29 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; GECKO                                       ;
 ; Top-level Entity Name              ; GECKO                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE30F23C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,719 / 28,848 ( 9 % )                      ;
-;     Total combinational functions  ; 2,546 / 28,848 ( 9 % )                      ;
-;     Dedicated logic registers      ; 1,187 / 28,848 ( 4 % )                      ;
-; Total registers                    ; 1187                                        ;
+; Total logic elements               ; 2,821 / 28,848 ( 10 % )                     ;
+;     Total combinational functions  ; 2,606 / 28,848 ( 9 % )                      ;
+;     Dedicated logic registers      ; 1,191 / 28,848 ( 4 % )                      ;
+; Total registers                    ; 1191                                        ;
 ; Total pins                         ; 102 / 329 ( 31 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,536 / 608,256 ( 11 % )                   ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/14/2023 14:40:51 ;
+; Start date & time ; 10/19/2023 21:32:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; GECKO               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 181124899486238.169728725113576        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 345048988695.169774393609456           ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; Off                                    ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -95,11 +95,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4865 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:25     ; 1.1                     ; 5930 MB             ; 00:00:36                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4687 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.6                     ; 4871 MB             ; 00:00:04                           ;
-; Total                ; 00:00:48     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4823 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:47     ; 1.1                     ; 5673 MB             ; 00:00:56                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4683 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.4                     ; 4819 MB             ; 00:00:04                           ;
+; Total                ; 00:01:12     ; --                      ; --                  ; 00:01:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,10 +108,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; ICIN3PC13-W      ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; ICIN3PC13-W      ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; ICIN3PC13-W      ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; ICIN3PC13-W      ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; ic-win-INJ-005   ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; ic-win-INJ-005   ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; ic-win-INJ-005   ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; ic-win-INJ-005   ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

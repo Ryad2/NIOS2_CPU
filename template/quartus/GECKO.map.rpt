@@ -1,5 +1,5 @@
 Analysis & Synthesis report for GECKO
-Sat Oct 14 14:41:08 2023
+Thu Oct 19 21:32:36 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -20,7 +20,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  12. Inverted Register Statistics
  13. Registers Packed Into Inferred Megafunctions
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_4i14:auto_generated
+ 15. Source assignments for ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_gh14:auto_generated
  16. Source assignments for RAM:RAM_0|altsyncram:ram_rtl_0|altsyncram_u781:auto_generated
  17. Parameter Settings for User Entity Instance: ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component
  18. Parameter Settings for Inferred Entity Instance: RAM:RAM_0|altsyncram:ram_rtl_0
@@ -53,15 +53,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 14 14:41:08 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 19 21:32:36 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; GECKO                                       ;
 ; Top-level Entity Name              ; GECKO                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,611                                       ;
-;     Total combinational functions  ; 2,545                                       ;
-;     Dedicated logic registers      ; 1,219                                       ;
-; Total registers                    ; 1219                                        ;
+; Total logic elements               ; 3,671                                       ;
+;     Total combinational functions  ; 2,606                                       ;
+;     Dedicated logic registers      ; 1,223                                       ;
+; Total registers                    ; 1223                                        ;
 ; Total pins                         ; 102                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,536                                      ;
@@ -161,65 +161,61 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                              ;
-+----------------------------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; GECKO.bdf                                                            ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/GECKO.bdf                       ;         ;
-; ALU.bdf                                                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/ALU.bdf                         ;         ;
-; CPU.bdf                                                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/CPU.bdf                         ;         ;
-; ../vhdl/add_sub.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd                        ;         ;
-; ../vhdl/buttons.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd                        ;         ;
-; ../vhdl/comparator.vhd                                               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd                     ;         ;
-; ../vhdl/controller.vhd                                               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/controller.vhd                     ;         ;
-; ../vhdl/decoder.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd                        ;         ;
-; ../vhdl/extend.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd                         ;         ;
-; ../vhdl/IR.vhd                                                       ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd                             ;         ;
-; ../vhdl/LEDs.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd                           ;         ;
-; ../vhdl/logic_unit.vhd                                               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd                     ;         ;
-; ../vhdl/multiplexer.vhd                                              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd                    ;         ;
-; ../vhdl/mux2x5.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd                         ;         ;
-; ../vhdl/mux2x16.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd                        ;         ;
-; ../vhdl/mux2x32.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd                        ;         ;
-; ../vhdl/PC.vhd                                                       ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd                             ;         ;
-; ../vhdl/RAM.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd                            ;         ;
-; ../vhdl/register_file.vhd                                            ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd                  ;         ;
-; ../vhdl/ROM.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd                            ;         ;
-; ../vhdl/ROM_Block.vhd                                                ; yes             ; User Wizard-Generated File                            ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd                      ;         ;
-; ../vhdl/shift_unit.vhd                                               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd                     ;         ;
-; altsyncram.tdf                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                    ;         ;
-; stratix_ram_block.inc                                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc             ;         ;
-; lpm_mux.inc                                                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                       ;         ;
-; lpm_decode.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                    ;         ;
-; aglobal181.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                    ;         ;
-; a_rdenreg.inc                                                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                     ;         ;
-; altrom.inc                                                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                        ;         ;
-; altram.inc                                                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                        ;         ;
-; altdpram.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                      ;         ;
-; db/altsyncram_4i14.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_4i14.tdf          ;         ;
-; C:/Users/cristini/Desktop/Template-20230927/template/quartus/ROM.hex ; yes             ; Auto-Found Memory Initialization File                 ; C:/Users/cristini/Desktop/Template-20230927/template/quartus/ROM.hex                     ;         ;
-; db/altsyncram_u781.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_u781.tdf          ;         ;
-; db/GECKO.ram0_RAM_15119.hdl.mif                                      ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/GECKO.ram0_RAM_15119.hdl.mif ;         ;
-+----------------------------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++----------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
+; GECKO.bdf                        ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/GECKO.bdf                       ;         ;
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/ALU.bdf                         ;         ;
+; CPU.bdf                          ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/CPU.bdf                         ;         ;
+; ../vhdl/add_sub.vhd              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/add_sub.vhd                        ;         ;
+; ../vhdl/buttons.vhd              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/buttons.vhd                        ;         ;
+; ../vhdl/comparator.vhd           ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/comparator.vhd                     ;         ;
+; ../vhdl/controller.vhd           ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/controller.vhd                     ;         ;
+; ../vhdl/decoder.vhd              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/decoder.vhd                        ;         ;
+; ../vhdl/extend.vhd               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/extend.vhd                         ;         ;
+; ../vhdl/IR.vhd                   ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd                             ;         ;
+; ../vhdl/LEDs.vhd                 ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd                           ;         ;
+; ../vhdl/logic_unit.vhd           ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/logic_unit.vhd                     ;         ;
+; ../vhdl/multiplexer.vhd          ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/multiplexer.vhd                    ;         ;
+; ../vhdl/mux2x5.vhd               ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x5.vhd                         ;         ;
+; ../vhdl/mux2x16.vhd              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x16.vhd                        ;         ;
+; ../vhdl/mux2x32.vhd              ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/mux2x32.vhd                        ;         ;
+; ../vhdl/PC.vhd                   ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/PC.vhd                             ;         ;
+; ../vhdl/RAM.vhd                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/RAM.vhd                            ;         ;
+; ../vhdl/register_file.vhd        ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/register_file.vhd                  ;         ;
+; ../vhdl/ROM.vhd                  ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/ROM.vhd                            ;         ;
+; ../vhdl/ROM_Block.vhd            ; yes             ; User Wizard-Generated File                            ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/ROM_Block.vhd                      ;         ;
+; ../vhdl/shift_unit.vhd           ; yes             ; User VHDL File                                        ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/shift_unit.vhd                     ;         ;
+; ROM.hex                          ; yes             ; User Hexadecimal (Intel-Format) File                  ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/ROM.hex                         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                    ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc             ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                       ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                    ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                    ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                     ;         ;
+; altrom.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                        ;         ;
+; altram.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                        ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                      ;         ;
+; db/altsyncram_gh14.tdf           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_gh14.tdf          ;         ;
+; db/altsyncram_u781.tdf           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_u781.tdf          ;         ;
+; db/GECKO.ram0_RAM_15119.hdl.mif  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/GECKO.ram0_RAM_15119.hdl.mif ;         ;
++----------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -227,20 +223,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,611     ;
+; Estimated Total logic elements              ; 3,671     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2545      ;
+; Total combinational functions               ; 2606      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1874      ;
-;     -- 3 input functions                    ; 515       ;
+;     -- 4 input functions                    ; 1964      ;
+;     -- 3 input functions                    ; 486       ;
 ;     -- <=2 input functions                  ; 156       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2485      ;
-;     -- arithmetic mode                      ; 60        ;
+;     -- normal mode                          ; 2531      ;
+;     -- arithmetic mode                      ; 75        ;
 ;                                             ;           ;
-; Total registers                             ; 1219      ;
-;     -- Dedicated logic registers            ; 1219      ;
+; Total registers                             ; 1223      ;
+;     -- Dedicated logic registers            ; 1223      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 102       ;
@@ -249,9 +245,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1283      ;
-; Total fan-out                               ; 14054     ;
-; Average fan-out                             ; 3.49      ;
+; Maximum fan-out                             ; 1287      ;
+; Total fan-out                               ; 14341     ;
+; Average fan-out                             ; 3.50      ;
 +---------------------------------------------+-----------+
 
 
@@ -260,44 +256,44 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |GECKO                                       ; 2545 (113)          ; 1219 (0)                  ; 65536       ; 0            ; 0       ; 0         ; 102  ; 0            ; |GECKO                                                                                          ; GECKO           ; work         ;
-;    |CPU:inst|                                ; 2281 (3)            ; 1050 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst                                                                                 ; CPU             ; work         ;
-;       |ALU:alu_0|                            ; 544 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0                                                                       ; ALU             ; work         ;
+; |GECKO                                       ; 2606 (113)          ; 1223 (0)                  ; 65536       ; 0            ; 0       ; 0         ; 102  ; 0            ; |GECKO                                                                                          ; GECKO           ; work         ;
+;    |CPU:inst|                                ; 2337 (1)            ; 1054 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst                                                                                 ; CPU             ; work         ;
+;       |ALU:alu_0|                            ; 539 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0                                                                       ; ALU             ; work         ;
 ;          |add_sub:add_sub_0|                 ; 77 (77)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|add_sub:add_sub_0                                                     ; add_sub         ; work         ;
 ;          |comparator:comparator_0|           ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|comparator:comparator_0                                               ; comparator      ; work         ;
 ;          |logic_unit:logic_unit_0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|logic_unit:logic_unit_0                                               ; logic_unit      ; work         ;
-;          |multiplexer:multiplexer_0|         ; 102 (102)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0                                             ; multiplexer     ; work         ;
-;          |shift_unit:shift_unit_0|           ; 354 (354)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|shift_unit:shift_unit_0                                               ; shift_unit      ; work         ;
+;          |multiplexer:multiplexer_0|         ; 103 (103)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0                                             ; multiplexer     ; work         ;
+;          |shift_unit:shift_unit_0|           ; 348 (348)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|ALU:alu_0|shift_unit:shift_unit_0                                               ; shift_unit      ; work         ;
 ;       |IR:IR_0|                              ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|IR:IR_0                                                                         ; IR              ; work         ;
-;       |PC:PC_0|                              ; 28 (28)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|PC:PC_0                                                                         ; PC              ; work         ;
-;       |controller:controller_0|              ; 79 (79)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|controller:controller_0                                                         ; controller      ; work         ;
-;       |mux2x16:mux_addr|                     ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x16:mux_addr                                                                ; mux2x16         ; work         ;
-;       |mux2x32:mux_b|                        ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x32:mux_b                                                                   ; mux2x32         ; work         ;
-;       |mux2x32:mux_data|                     ; 179 (179)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x32:mux_data                                                                ; mux2x32         ; work         ;
+;       |PC:PC_0|                              ; 66 (66)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|PC:PC_0                                                                         ; PC              ; work         ;
+;       |controller:controller_0|              ; 101 (101)           ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|controller:controller_0                                                         ; controller      ; work         ;
+;       |mux2x16:mux_addr|                     ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x16:mux_addr                                                                ; mux2x16         ; work         ;
+;       |mux2x32:mux_b|                        ; 49 (49)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x32:mux_b                                                                   ; mux2x32         ; work         ;
+;       |mux2x32:mux_data|                     ; 181 (181)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x32:mux_data                                                                ; mux2x32         ; work         ;
 ;       |mux2x5:mux_aw|                        ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|mux2x5:mux_aw                                                                   ; mux2x5          ; work         ;
-;       |register_file:register_file_0|        ; 1387 (1387)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|register_file:register_file_0                                                   ; register_file   ; work         ;
-;    |LEDs:LEDs_0|                             ; 122 (122)           ; 115 (115)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|LEDs:LEDs_0                                                                              ; LEDs            ; work         ;
+;       |register_file:register_file_0|        ; 1384 (1384)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|CPU:inst|register_file:register_file_0                                                   ; register_file   ; work         ;
+;    |LEDs:LEDs_0|                             ; 125 (125)           ; 115 (115)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|LEDs:LEDs_0                                                                              ; LEDs            ; work         ;
 ;    |RAM:RAM_0|                               ; 2 (2)               ; 2 (2)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|RAM:RAM_0                                                                                ; RAM             ; work         ;
 ;       |altsyncram:ram_rtl_0|                 ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|RAM:RAM_0|altsyncram:ram_rtl_0                                                           ; altsyncram      ; work         ;
 ;          |altsyncram_u781:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|RAM:RAM_0|altsyncram:ram_rtl_0|altsyncram_u781:auto_generated                            ; altsyncram_u781 ; work         ;
-;    |ROM:ROM_0|                               ; 1 (1)               ; 43 (43)                   ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0                                                                                ; ROM             ; work         ;
+;    |ROM:ROM_0|                               ; 2 (2)               ; 43 (43)                   ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0                                                                                ; ROM             ; work         ;
 ;       |ROM_Block:rom_b|                      ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0|ROM_Block:rom_b                                                                ; ROM_Block       ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;             |altsyncram_4i14:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_4i14:auto_generated ; altsyncram_4i14 ; work         ;
+;             |altsyncram_gh14:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_gh14:auto_generated ; altsyncram_gh14 ; work         ;
 ;    |buttons:buttons_0|                       ; 17 (17)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|buttons:buttons_0                                                                        ; buttons         ; work         ;
-;    |decoder:decoder_0|                       ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|decoder:decoder_0                                                                        ; decoder         ; work         ;
+;    |decoder:decoder_0|                       ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |GECKO|decoder:decoder_0                                                                        ; decoder         ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                    ;
-+-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------------------------------------------------+
-; Name                                                                                                ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                                                  ;
-+-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------------------------------------------------+
-; RAM:RAM_0|altsyncram:ram_rtl_0|altsyncram_u781:auto_generated|ALTSYNCRAM                            ; AUTO ; Single Port ; 1024         ; 32           ; --           ; --           ; 32768 ; db/GECKO.ram0_RAM_15119.hdl.mif                                      ;
-; ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_4i14:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 1024         ; 32           ; --           ; --           ; 32768 ; C:\Users\cristini\Desktop\Template-20230927\template\quartus\ROM.hex ;
-+-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+----------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                ;
++-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------------------------------------------------------------------+
+; Name                                                                                                ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                                              ;
++-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------------------------------------------------------------------+
+; RAM:RAM_0|altsyncram:ram_rtl_0|altsyncram_u781:auto_generated|ALTSYNCRAM                            ; AUTO ; Single Port ; 1024         ; 32           ; --           ; --           ; 32768 ; db/GECKO.ram0_RAM_15119.hdl.mif                                  ;
+; ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_gh14:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 1024         ; 32           ; --           ; --           ; 32768 ; C:\Users\cristini\Desktop\Lab3_CompARCH\template\quartus\ROM.hex ;
++-----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -323,80 +319,77 @@ Encoding Type:  One-Hot
 +----------------------+--------------------+-------------------+---------------------+--------------------+----------------------+---------------------+---------------------+--------------------+--------------------+---------------------+---------------------+----------------------+----------------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                 ;
-+------------------------------------------------------+---------------------------------------------+
-; Register name                                        ; Reason for Removal                          ;
-+------------------------------------------------------+---------------------------------------------+
-; CPU:inst|PC:PC_0|cur_addr[0,1]                       ; Stuck at GND due to stuck port clock_enable ;
-; ROM:ROM_0|rddata[1]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[2]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[3]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[4]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[5]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[6]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[7]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[8]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[9]~en                               ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[10]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[11]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[12]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[13]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[14]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[15]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[16]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[17]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[18]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[19]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[20]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[21]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[22]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[23]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[24]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[25]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[26]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[27]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[28]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[29]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[30]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; ROM:ROM_0|rddata[31]~en                              ; Merged with ROM:ROM_0|rddata[0]~en          ;
-; buttons:buttons_0|read_reg                           ; Lost fanout                                 ;
-; CPU:inst|register_file:register_file_0|reg[0][31]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][30]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][29]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][28]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][27]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][26]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][25]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][24]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][23]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][22]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][21]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][20]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][19]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][18]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][17]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][16]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][15]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][14]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][13]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][12]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][11]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][10]    ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][9]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][8]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][7]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][6]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][5]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][4]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][3]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][2]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][1]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|register_file:register_file_0|reg[0][0]     ; Stuck at GND due to stuck port data_in      ;
-; CPU:inst|controller:controller_0|current_state.BREAK ; Lost fanout                                 ;
-; CPU:inst|controller:controller_0|current_state.I_OP  ; Lost fanout                                 ;
-; Total Number of Removed Registers = 68               ;                                             ;
-+------------------------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++---------------------------------------------------+----------------------------------------+
+; Register name                                     ; Reason for Removal                     ;
++---------------------------------------------------+----------------------------------------+
+; ROM:ROM_0|rddata[1]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[2]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[3]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[4]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[5]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[6]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[7]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[8]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[9]~en                            ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[10]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[11]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[12]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[13]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[14]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[15]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[16]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[17]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[18]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[19]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[20]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[21]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[22]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[23]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[24]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[25]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[26]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[27]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[28]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[29]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[30]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; ROM:ROM_0|rddata[31]~en                           ; Merged with ROM:ROM_0|rddata[0]~en     ;
+; buttons:buttons_0|read_reg                        ; Lost fanout                            ;
+; CPU:inst|register_file:register_file_0|reg[0][31] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][30] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][29] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][28] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][27] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][26] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][25] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][24] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][23] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][22] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][21] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][20] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][19] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][18] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][17] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][16] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][15] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][14] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][13] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][12] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][11] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][10] ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][9]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][8]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][7]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][6]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][5]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][4]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][3]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][2]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][1]  ; Stuck at GND due to stuck port data_in ;
+; CPU:inst|register_file:register_file_0|reg[0][0]  ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 64            ;                                        ;
++---------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -404,12 +397,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1219  ;
+; Total registers                              ; 1223  ;
 ; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 150   ;
+; Number of registers using Asynchronous Clear ; 154   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1152  ;
+; Number of registers using Clock Enable       ; 1154  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -424,9 +417,9 @@ Encoding Type:  One-Hot
 ; LEDs:LEDs_0|duty_cycle[1]              ; 2       ;
 ; LEDs:LEDs_0|duty_cycle[0]              ; 2       ;
 ; buttons:buttons_0|buttons_reg[0]       ; 1       ;
-; buttons:buttons_0|buttons_reg[2]       ; 1       ;
 ; buttons:buttons_0|buttons_reg[3]       ; 1       ;
 ; buttons:buttons_0|buttons_reg[1]       ; 1       ;
+; buttons:buttons_0|buttons_reg[2]       ; 1       ;
 ; Total number of inverted registers = 8 ;         ;
 +----------------------------------------+---------+
 
@@ -445,29 +438,30 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |GECKO|CPU:inst|register_file:register_file_0|reg[0][19]  ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |GECKO|CPU:inst|PC:PC_0|cur_addr[10]                      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[1]                     ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[12]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |GECKO|CPU:inst|register_file:register_file_0|reg[0][1]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |GECKO|CPU:inst|PC:PC_0|cur_addr[0]                       ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |GECKO|CPU:inst|PC:PC_0|cur_addr[12]                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[10]                    ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x5:mux_aw|o[4]                        ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |GECKO|CPU:inst|register_file:register_file_0|Mux0        ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |GECKO|CPU:inst|register_file:register_file_0|Mux55       ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |GECKO|CPU:inst|register_file:register_file_0|Mux3        ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |GECKO|CPU:inst|register_file:register_file_0|Mux44       ;
 ; 7:1                ; 24 bits   ; 96 LEs        ; 72 LEs               ; 24 LEs                 ; No         ; |GECKO|rddata[28]                                         ;
 ; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |GECKO|rddata[4]                                          ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |GECKO|rddata[1]                                          ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 2 LEs                ; 12 LEs                 ; No         ; |GECKO|CPU:inst|controller:controller_0|next_state.BREAK  ;
-; 13:1               ; 8 bits    ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0|Mux20 ;
-; 14:1               ; 4 bits    ; 36 LEs        ; 32 LEs               ; 4 LEs                  ; No         ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0|Mux26 ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |GECKO|rddata[3]                                          ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0|Mux23 ;
+; 14:1               ; 4 bits    ; 36 LEs        ; 32 LEs               ; 4 LEs                  ; No         ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0|Mux27 ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 2 LEs                ; 14 LEs                 ; No         ; |GECKO|CPU:inst|controller:controller_0|next_state.I_OP   ;
 ; 15:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |GECKO|CPU:inst|ALU:alu_0|multiplexer:multiplexer_0|Mux29 ;
-; 15:1               ; 8 bits    ; 80 LEs        ; 72 LEs               ; 8 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[19]                    ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[27]                    ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[28]                    ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 72 LEs               ; 8 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[23]                    ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |GECKO|CPU:inst|controller:controller_0|op_alu[5]         ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[24]                    ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[29]                    ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 22 LEs               ; 2 LEs                  ; No         ; |GECKO|CPU:inst|mux2x32:mux_data|o[31]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Source assignments for ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_4i14:auto_generated ;
+; Source assignments for ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_gh14:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                ;
 +---------------------------------+--------------------+------+---------------------------------------------------+
@@ -484,64 +478,64 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component                     ;
-+------------------------------------+----------------------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                                ; Type           ;
-+------------------------------------+----------------------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                                    ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                                   ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                                  ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                                   ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                                  ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                                    ; Untyped        ;
-; OPERATION_MODE                     ; ROM                                                                  ; Untyped        ;
-; WIDTH_A                            ; 32                                                                   ; Signed Integer ;
-; WIDTHAD_A                          ; 10                                                                   ; Signed Integer ;
-; NUMWORDS_A                         ; 1024                                                                 ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                                         ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                                 ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                                 ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                                 ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                                 ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                                 ; Untyped        ;
-; WIDTH_B                            ; 1                                                                    ; Signed Integer ;
-; WIDTHAD_B                          ; 1                                                                    ; Signed Integer ;
-; NUMWORDS_B                         ; 0                                                                    ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                               ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                               ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                               ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                               ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                                         ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                               ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                                 ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                                 ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                                 ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                                 ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                                 ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                                 ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                                    ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                                    ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                                                 ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                                    ; Signed Integer ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                            ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                                 ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                                 ; Untyped        ;
-; INIT_FILE                          ; C:\Users\cristini\Desktop\Template-20230927\template\quartus\ROM.hex ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                               ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                                    ; Signed Integer ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                               ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                               ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                               ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                               ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                                      ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                                      ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                                ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                                ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                                    ; Signed Integer ;
-; DEVICE_FAMILY                      ; Cyclone IV E                                                         ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_4i14                                                      ; Untyped        ;
-+------------------------------------+----------------------------------------------------------------------+----------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component                 ;
++------------------------------------+------------------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                            ; Type           ;
++------------------------------------+------------------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                                ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                               ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                              ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                               ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                              ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                                ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                                              ; Untyped        ;
+; WIDTH_A                            ; 32                                                               ; Signed Integer ;
+; WIDTHAD_A                          ; 10                                                               ; Signed Integer ;
+; NUMWORDS_A                         ; 1024                                                             ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                                     ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                             ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                             ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                             ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                             ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                             ; Untyped        ;
+; WIDTH_B                            ; 1                                                                ; Signed Integer ;
+; WIDTHAD_B                          ; 1                                                                ; Signed Integer ;
+; NUMWORDS_B                         ; 0                                                                ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                           ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                           ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                           ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                           ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                                     ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                           ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                             ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                             ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                             ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                             ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                             ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                             ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                                ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                                ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                             ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                                ; Signed Integer ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                        ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                             ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                             ; Untyped        ;
+; INIT_FILE                          ; C:\Users\cristini\Desktop\Lab3_CompARCH\template\quartus\ROM.hex ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                           ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                                ; Signed Integer ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                           ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                           ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                           ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                                  ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                                  ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                            ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                            ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                                ; Signed Integer ;
+; DEVICE_FAMILY                      ; Cyclone IV E                                                     ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_gh14                                                  ; Untyped        ;
++------------------------------------+------------------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -643,26 +637,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 102                         ;
-; cycloneiii_ff         ; 1219                        ;
-;     CLR               ; 24                          ;
+; cycloneiii_ff         ; 1223                        ;
+;     CLR               ; 26                          ;
 ;     CLR SCLR          ; 8                           ;
 ;     ENA               ; 1034                        ;
-;     ENA CLR           ; 118                         ;
+;     ENA CLR           ; 120                         ;
 ;     plain             ; 35                          ;
-; cycloneiii_lcell_comb ; 2545                        ;
-;     arith             ; 60                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 53                          ;
-;     normal            ; 2485                        ;
+; cycloneiii_lcell_comb ; 2606                        ;
+;     arith             ; 75                          ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 55                          ;
+;     normal            ; 2531                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 138                         ;
-;         3 data inputs ; 462                         ;
-;         4 data inputs ; 1874                        ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 124                         ;
+;         3 data inputs ; 431                         ;
+;         4 data inputs ; 1964                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 21.20                       ;
-; Average LUT depth     ; 15.94                       ;
+; Max LUT depth         ; 20.20                       ;
+; Average LUT depth     ; 14.86                       ;
 +-----------------------+-----------------------------+
 
 
@@ -671,7 +665,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -681,10 +675,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 14 14:40:51 2023
+    Info: Processing started: Thu Oct 19 21:32:16 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off GECKO -c GECKO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file gecko.bdf
     Info (12023): Found entity 1: GECKO
 Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
@@ -791,7 +785,7 @@ Info (12133): Instantiated megafunction "ROM:ROM_0|ROM_Block:rom_b|altsyncram:al
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "C:\Users\cristini\Desktop\Template-20230927\template\quartus\ROM.hex"
+    Info (12134): Parameter "init_file" = "C:\Users\cristini\Desktop\Lab3_CompARCH\template\quartus\ROM.hex"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "1024"
@@ -821,44 +815,44 @@ Info (12133): Instantiated megafunction "ROM:ROM_0|ROM_Block:rom_b|altsyncram:al
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4i14.tdf
-    Info (12023): Found entity 1: altsyncram_4i14 File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_4i14.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_4i14" for hierarchy "ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_4i14:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gh14.tdf
+    Info (12023): Found entity 1: altsyncram_gh14 File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/quartus/db/altsyncram_gh14.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_gh14" for hierarchy "ROM:ROM_0|ROM_Block:rom_b|altsyncram:altsyncram_component|altsyncram_gh14:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "RAM" for hierarchy "RAM:RAM_0"
 Info (12128): Elaborating entity "buttons" for hierarchy "buttons:buttons_0"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "rddata[31]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[30]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[29]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[28]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[27]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[26]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[25]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[24]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[23]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[22]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[21]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[20]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[19]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[18]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[17]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[16]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[15]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[14]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[13]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[12]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[11]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[10]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[9]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[8]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[7]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[6]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[5]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[4]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[3]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[2]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[1]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
-    Warning (13048): Converted tri-state node "rddata[0]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 18
+    Warning (13048): Converted tri-state node "rddata[31]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[30]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[29]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[28]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[27]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[26]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[25]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[24]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[23]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[22]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[21]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[20]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[19]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[18]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[17]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[16]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[15]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[14]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[13]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[12]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[11]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[10]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[9]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[8]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[7]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[6]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[5]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[4]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[3]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[2]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[1]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
+    Warning (13048): Converted tri-state node "rddata[0]" into a selector File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/IR.vhd Line: 21
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "RAM:RAM_0|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
@@ -888,18 +882,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (13000): Registers with preset signals will power-up high File: C:/Users/cristini/Desktop/Lab3_CompARCH/template/vhdl/LEDs.vhd Line: 92
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3874 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3935 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 96 output pins
-    Info (21061): Implemented 3708 logic cells
+    Info (21061): Implemented 3769 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Sat Oct 14 14:41:08 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu Oct 19 21:32:36 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:28
 
 
