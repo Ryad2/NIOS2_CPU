@@ -1,1 +1,1 @@
-# description of NIOS2 Processor
+# Description of NIOS2 Processor
