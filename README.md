@@ -1,1 +1,1 @@
-# Lab3_CompARCH
+# description of NIOS2 Processor
